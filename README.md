@@ -25,8 +25,6 @@ npm init
 ## 参考文档
 
 - [云开发文档](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html)
-- [vant组件]
-(https://youzan.github.io/vant-weapp/#/intro)
-- [request/request-promise]
-(https://github.com/request/request-promise)
+- [vant组件](https://youzan.github.io/vant-weapp/#/intro)
+- [request/request-promise](https://github.com/request/request-promise)
 
