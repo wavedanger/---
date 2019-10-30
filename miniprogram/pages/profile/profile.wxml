@@ -1,0 +1,13 @@
+<view class="user-bg">
+  <view class="user-img">
+    <open-data type="userAvatarUrl"></open-data>
+  </view>
+  <view class="user-name">
+    <open-data type="userNickName"></open-data>
+  </view>
+</view>
+<view class="about">
+  <view>作者：浪险</view>
+  <view>个人博客：wavedanger.top</view>
+  <view>github:https://github.com/wavedanger</view>
+</view>

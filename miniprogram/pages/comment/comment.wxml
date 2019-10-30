@@ -1,0 +1,33 @@
+<view>
+  <view class="movie-bg" style='background:url({{detail.images.large}}) no-repeat top/cover'>
+  </view>
+  <view class="movie-mask"></view>
+  <view class="movie-info">
+    <image src="{{detail.images.large}}" class="movie-img"></image>
+    <view class="movie-about">
+      <view>{{detail.title}}</view>
+      <view>导演：{{detail.directors[0].name}}</view>
+      <view>主演：<text wx:for="{{detail.casts}}" wx:key="{{item.id}}">{{item.name}} </text></view>
+      <view>评分：<text style="color:#faaf00;font-size:40rpx;">{{detail.rating.average}}</text>分</view>
+      <view>发布日期：{{detail.pubdate}}</view>
+      <view>想看：{{detail.wish_count}}</view>
+    </view>
+  </view>
+  <view class="movie-desc">
+    {{detail.summary}}
+  </view>
+  <view class="movie-operate">
+     <van-field
+    value="{{ value }}"
+    placeholder="写些评价吧"
+    border="{{ false }}"
+    bind:change="onContentChange"
+  />
+  <van-rate value="{{ value }}" bind:change="onScoreChange" />
+  <van-button type="warning" bindtap="upLoadImg">上传图片</van-button>
+  <view>
+    <image class="comment-img" wx:for="{{images}}" wx:key="{{index}}" src="{{item}}"></image>
+  </view>
+  <van-button type="danger" size="large" bindtap="commit">提交评论</van-button>
+  </view>
+</view>
